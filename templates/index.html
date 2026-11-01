@@ -1,0 +1,20 @@
+{% extends "base.html" %}{% block title %}GapLens AI — Career glow-up lab{% endblock %}{% block content %}
+<section class="hero">
+ <div class="hero-sticker sticker-one">NO BORING CAREER ADVICE ✋</div><div class="hero-sticker sticker-two">YOUR FUTURE called 📞</div>
+ <div class="eyebrow">✳ THE CAREER GLOW-UP MACHINE</div><h1>Your dream job called.<br><span>It wants receipts.</span></h1>
+ <p class="hero-copy">Drop your resume. Pick a role. We'll expose the skill gaps, build your training arc and get your portfolio out of its flop era.</p>
+ <div class="hero-bottom"><span class="hero-note">⚡ REAL SKILLS. REAL PLAN. MAIN CHARACTER ENERGY.</span><span class="scribble">let's gooo ↘</span></div>
+</section>
+<div class="marquee"><div>SKILL CHECK ✳ CAREER RESET ✳ PORTFOLIO POWER-UP ✳ INTERVIEW MODE ✳ SKILL CHECK ✳ CAREER RESET ✳</div></div>
+<section class="panel form-panel"><div class="section-head"><div><div class="eyebrow">01 / ENTER THE LAB</div><h2>Okay, what's the mission?</h2></div><div class="number-badge">START HERE ↘</div></div>
+<form method="post" enctype="multipart/form-data" id="career-form">
+ <div class="upload-zone"><div class="upload-emoji">📄</div><div><label for="resume">Drop your resume's name in the hat</label><p>PDF or DOCX · max 8 MB · no ancient scrolls please</p></div><input id="resume" name="resume" type="file" accept=".pdf,.docx" required></div>
+ <label for="target_role">Your target role <span class="label-aside">THE DREAM JOB</span></label><input id="target_role" name="target_role" placeholder="e.g. Python Developer, Product Analyst..." required>
+ <label for="job_description">Paste the job description <span class="label-aside">THE RULEBOOK</span></label><textarea id="job_description" name="job_description" placeholder="Paste the job description here. The more detail, the better the detective work..." required></textarea>
+ <div class="form-footer"><span>🔒 Your resume is processed by this app.</span><button type="submit" class="big-button">UNLOCK MY CAREER PLAN <b>↗</b></button></div>
+</form></section>
+<section class="feature-grid"><article class="feature feature-purple"><div class="feature-icon">🕵️</div><small>01 / DETECTIVE MODE</small><h3>Find the gaps.</h3><p>See what your resume says vs. what the job wants. No sugar-coating.</p></article>
+<article class="feature feature-yellow"><div class="feature-icon">🧠</div><small>02 / TRAINING ARC</small><h3>Build the skills.</h3><p>Turn missing skills into a week-by-week action plan.</p></article>
+<article class="feature feature-pink"><div class="feature-icon">🏆</div><small>03 / PROVE IT</small><h3>Show the receipts.</h3><p>Get portfolio ideas, practice interviews and track applications.</p></article></section>
+<div class="tiny-disclaimer">* Not magic. Current skill matching uses a built-in keyword list, so treat the result as a useful first draft—not a hiring prophecy.</div>
+{% endblock %}
